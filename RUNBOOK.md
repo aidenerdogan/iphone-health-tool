@@ -1,15 +1,18 @@
 # GPT-5.6 Sol runbook
 
-Run the prompts in order from this repository root. High reasoning is selected
-for implementation work; the model also supports higher settings if a later
-task proves unusually difficult.
+Run tasks from the repository root and review each result before starting the
+next phase.
 
-## 1. Performance vertical slice
+## 1. Feasibility and foundation
 
-    codex exec -m gpt-5.6-sol -c 'model_reasoning_effort="high"' --approve-for-me -C . - < prompts/01-performance-mvp.md
+    codex exec -m gpt-5.6-sol -c 'model_reasoning_effort="high"' --approve-for-me -C . - < prompts/00-feasibility-and-foundation.md
 
-## 2. Battery vertical slice
+## 2. macOS guided tune-up MVP
 
-    codex exec -m gpt-5.6-sol -c 'model_reasoning_effort="high"' --approve-for-me -C . - < prompts/02-battery-mvp.md
+    codex exec -m gpt-5.6-sol -c 'model_reasoning_effort="high"' --approve-for-me -C . - < prompts/01-macos-guided-tuneup.md
 
-Commit and review the first result before running the second command.
+## 3. Remediation and verification
+
+    codex exec -m gpt-5.6-sol -c 'model_reasoning_effort="high"' --approve-for-me -C . - < prompts/02-remediation-and-verification.md
+
+The exact new-session handoff and acceptance gates are in NEXT_SESSION.md.

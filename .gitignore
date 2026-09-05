@@ -1,4 +1,6 @@
 .DS_Store
+.idea/
+.vscode/
 .build/
 DerivedData/
 xcuserdata/
@@ -8,3 +10,9 @@ xcuserdata/
 build/
 *.ipa
 *.dSYM.zip
+node_modules/
+dist/
+src-tauri/target/
+target/
+coverage/
+*.log

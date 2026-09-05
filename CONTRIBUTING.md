@@ -1,8 +1,12 @@
 # Contributing
 
-Open an issue before a large behavioral change. Keep pull requests focused,
-include tests for domain logic, and update the architecture document when a
-public data model or product boundary changes.
+Open an issue before a large behavioral, device-protocol, schema, or remediation
+change. Keep pull requests focused and include deterministic tests for domain
+logic.
 
-Performance claims must include reproducible conditions and evidence. Features
-that require private APIs or imply visibility into other apps are not accepted.
+All first-release user-facing copy is English. Performance and battery claims
+must include reproducible evidence. Update the architecture, support matrix, and
+remediation catalog when public behavior changes.
+
+Features that require private Apple frameworks, jailbreak access, silent device
+changes, or misleading cleanup claims are not accepted.
